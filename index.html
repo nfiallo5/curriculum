@@ -4,6 +4,7 @@
     <title>Curriculum Vitae - Nicolas Fiallo</title>
     <meta charset="UTF-8" />
     <meta
+      content-type="text/html"
       name="keywords"
       content="Curriculum Vitae, CV, Nicolas Fiallo, Experiencia, Educación"
     />
@@ -12,25 +13,14 @@
       content="Este es el Curriculum Vitae de Nicolas Fiallo, que incluye información sobre su experiencia, educación y habilidades."
     />
     <meta name="author" content="Nicolas Fiallo" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css" />
   </head>
   <body>
     <header>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
       <h1>Nicolas Fiallo</h1>
     </header>
     <section id="perfil">
-      <img
-        src="https://placehold.co/200x200"
-        alt="Foto de Perfil"
-        style="
-          border-radius: 50%;
-          width: 200px;
-          height: 200px;
-          object-fit: cover;
-          border: 4px solid #ccc;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        "
-      />
+      <img id="photo" src="https://placehold.co/200x200" alt="Foto de Perfil" />
     </section>
     <nav>
       <ul>
@@ -45,14 +35,14 @@
 
     <main>
       <section id="resumen">
-        <h2>Resumen</h2>
+        <h2 class="subtitle">Resumen</h2>
         <p>Breve descripción de tus habilidades y experiencia.</p>
       </section>
       <section id="experiencia">
-        <h2>Experiencia</h2>
+        <h2 class="subtitle">Experiencia</h2>
       </section>
       <section id="educacion">
-        <h2>Educación</h2>
+        <h2 class="subtitle">Educación</h2>
         <table style="width: 100%; border-collapse: collapse; margin-top: 12px">
           <thead>
             <tr>
@@ -80,10 +70,10 @@
         </table>
       </section>
       <section id="habilidades">
-        <h2>Habilidades</h2>
+        <h2 class="subtitle">Habilidades</h2>
       </section>
       <section id="actividades">
-        <h2>Actividades</h2>
+        <h2 class="subtitle">Actividades</h2>
         <ul>
           <li>
             <h3>Hackathon 2024</h3>
@@ -96,7 +86,7 @@
         </ul>
       </section>
       <section id="Proyectos">
-        <h2>Proyectos</h2>
+        <h2 class="subtitle">Proyectos</h2>
         <ol>
           <li>
             <strong>Sistema de Gestión Académica</strong>
@@ -120,9 +110,9 @@
       </section>
 
       <section id="referencias">
-        <h2>Referencias</h2>
+        <h2 class="subtitle">Referencias</h2>
 
-        <div class="testimonial">
+        <section class="testimonial">
           <blockquote>
             "Nicolás aporta una claridad excepcional en cada proyecto y siempre
             cumple con los plazos establecidos."
@@ -133,9 +123,9 @@
             aplicaciones web, donde demostró habilidades técnicas y de gestión
             sobresalientes.
           </p>
-        </div>
+        </section>
 
-        <div class="testimonial">
+        <section class="testimonial">
           <blockquote>
             "Su capacidad de resolver problemas complejos y comunicar soluciones
             de forma concisa lo hace un colaborador invaluable."
@@ -145,9 +135,9 @@
             Colaboramos en múltiples integraciones de API y Nicolás siempre
             entregó resultados de alta calidad.
           </p>
-        </div>
+        </section>
 
-        <div class="testimonial">
+        <section class="testimonial">
           <blockquote>
             "Trabajar con Nicolás fue un placer: proactivo, detallista y
             comprometido con la excelencia."
@@ -157,7 +147,7 @@
             En proyectos de automatización IoT, Nicolás diseñó e implementó
             soluciones robustas que superaron nuestras expectativas.
           </p>
-        </div>
+        </section>
       </section>
 
       <section id="video">

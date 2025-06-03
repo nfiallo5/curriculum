@@ -1,23 +1,25 @@
-.navegador {
-  width: 1.5rem;
+:root {
+  --first-color: #080822;
+  --second-color: #060f29;
+  --third-color: #041c40;
+  --fourth-color: #84152e;
+  --fifth-color: #979d40;
+  --letter-color: #b8c1ec;
+  --nav-h: 70px;
 }
 
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--first-color);
+  color: var(--letter-color);
 }
 
-h1 {
-  text-align: center;
-  font-weight: 1000;
+main {
+  padding-top: var(--nav-h);
 }
 
-#photo {
-  border-radius: 40%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 4px solid #ccc;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+body > section {
+  padding-top: var(--nav-h);
 }
 
 footer p {
@@ -25,16 +27,30 @@ footer p {
   font-style: italic;
 }
 
-nav > ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-section {
+/* section {
   border: 0.2pt solid #cedddd;
   border-radius: 5px;
   margin: 4px 2px 8px 2px;
   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.6);
   padding: 0.8%;
+} */
+
+section > form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#referencias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#referencias > h2 {
+  flex: 0 0 100%;
+}
+
+#referencias > article {
+  flex: 1 1 calc(33.33% - 1rem);
 }

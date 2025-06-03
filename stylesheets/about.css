@@ -1,0 +1,74 @@
+.acerca {
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 1300px;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+#pfp img {
+  /* margin-left: 25%; */
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 187, 0, 0.1);
+}
+
+.acerca span {
+  color: var(--fourth-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.about-content {
+  flex: 0 1;
+}
+
+.acerca p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.word {
+  position: absolute;
+  overflow: hidden;
+  border-right: 0.12em solid;
+  white-space: nowrap;
+  animation: typing 3s steps(22) 1 forwards, blink 1s steps(1) infinite;
+  opacity: 0;
+}
+
+.w1 {
+  animation-delay: 0s;
+}
+
+.w2 {
+  animation-delay: 3.4s;
+}
+
+.w3 {
+  animation-delay: 6.8s;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  99.9% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
